@@ -13,6 +13,7 @@
 		1333A8012882D11800D3EE25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1333A7FF2882D11800D3EE25 /* Main.storyboard */; };
 		1333A8032882D11A00D3EE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1333A8022882D11A00D3EE25 /* Assets.xcassets */; };
 		1333A8062882D11A00D3EE25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1333A8042882D11A00D3EE25 /* LaunchScreen.storyboard */; };
+		1333A80F2882F41300D3EE25 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1333A80E2882F41300D3EE25 /* CoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1333A8022882D11A00D3EE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1333A8052882D11A00D3EE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1333A8072882D11A00D3EE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1333A80E2882F41300D3EE25 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		1333A7F82882D11800D3EE25 /* ByteCoin */ = {
 			isa = PBXGroup;
 			children = (
-				1333A7F92882D11800D3EE25 /* AppDelegate.swift */,
-				1333A7FB2882D11800D3EE25 /* SceneDelegate.swift */,
-				1333A7FD2882D11800D3EE25 /* ViewController.swift */,
-				1333A7FF2882D11800D3EE25 /* Main.storyboard */,
-				1333A8022882D11A00D3EE25 /* Assets.xcassets */,
-				1333A8042882D11A00D3EE25 /* LaunchScreen.storyboard */,
-				1333A8072882D11A00D3EE25 /* Info.plist */,
+				1333A8102882F42700D3EE25 /* Application */,
+				1333A80D2882F3F800D3EE25 /* Model */,
+				1333A8142882F47200D3EE25 /* View */,
+				1333A8132882F45A00D3EE25 /* Controllers */,
+				1333A8152882F49800D3EE25 /* Resources */,
 			);
 			path = ByteCoin;
+			sourceTree = "<group>";
+		};
+		1333A80D2882F3F800D3EE25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1333A80E2882F41300D3EE25 /* CoinManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1333A8102882F42700D3EE25 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1333A7F92882D11800D3EE25 /* AppDelegate.swift */,
+				1333A7FB2882D11800D3EE25 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1333A8132882F45A00D3EE25 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1333A7FD2882D11800D3EE25 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1333A8142882F47200D3EE25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1333A7FF2882D11800D3EE25 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1333A8152882F49800D3EE25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1333A8042882D11A00D3EE25 /* LaunchScreen.storyboard */,
+				1333A8022882D11A00D3EE25 /* Assets.xcassets */,
+				1333A8072882D11A00D3EE25 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1333A80F2882F41300D3EE25 /* CoinManager.swift in Sources */,
 				1333A7FE2882D11800D3EE25 /* ViewController.swift in Sources */,
 				1333A7FA2882D11800D3EE25 /* AppDelegate.swift in Sources */,
 				1333A7FC2882D11800D3EE25 /* SceneDelegate.swift in Sources */,
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S9H5A5QY2N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ByteCoin/Info.plist;
+				INFOPLIST_FILE = ByteCoin/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S9H5A5QY2N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ByteCoin/Info.plist;
+				INFOPLIST_FILE = ByteCoin/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
